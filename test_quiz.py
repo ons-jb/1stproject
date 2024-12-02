@@ -1,7 +1,7 @@
 import unittest
 from io import StringIO
 from unittest.mock import patch
-
+from quizapp.py import ask_question
 # The functions to test
 def check_answer(user_answer, correct_answer, options):
     return options[int(user_answer) - 1] == correct_answer
